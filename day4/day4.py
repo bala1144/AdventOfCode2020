@@ -55,13 +55,13 @@ check_hcl = lambda data : 1 if re.search("^(#[\da-f]{6})$", data['hcl']) else 0
 check_ecl = lambda data : 1 if ( len(data['ecl']) == 3 ) and (data['ecl'] in [ 'amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']) else 0
 
 # pid (Passport ID) - a nine-digit number, including leading zeroes.
-check_pid = lambda data : 1 if len(data['pid']) == 9 and ( data['pid'].isdecimal() ) else 0
+check_pid = lambda data : 1 if  len(data['pid']) == 9 and ( data['pid'].isdecimal() ) else 0
 
 check_valid_record = lambda data : check_byr(data) * check_iyr(data) * check_eyr(data) * check_hgt(data) * check_hcl(data) * check_ecl(data) * check_pid(data)
 
 
 def main():
-    input_file = 'D:\Projects\AdventOfCode2020\day4\input.txt'
+    input_file = 'D:\Projects\AdventOfCode2020\day4\sample_input.txt'
     # input_file = 'D:\Projects\AdventOfCode2020\day4\sample_input_invalid.txt'
     passport_datas = input_parser(input_file)
 
@@ -78,6 +78,10 @@ def main():
     for data in passport_datas:
         if len(data) == 8 or ( (len(data) == 7) and ('cid' not in  data.keys()) ) :
             valid_data += check_valid_record(data)
+            # print(data)
+            # print(check_byr(data), check_iyr(data),  check_eyr(data),  check_hgt(data),  check_hcl(data),  check_ecl(data) , check_pid(data))
+            print(data['pid'],check_pid(data))
+
     
     print('number of valid data', valid_data)
 
