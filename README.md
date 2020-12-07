@@ -6,3 +6,4 @@
 * [Day 04](https://adventofcode.com/2020/day/4) - Passport Validation
 * [Day 05](https://adventofcode.com/2020/day/5) - Seat finding
 * [Day 06](https://adventofcode.com/2020/day/6) - Custom Customs
+* [Day 07](https://adventofcode.com/2020/day/7) - Handy Haversacks

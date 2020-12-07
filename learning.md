@@ -1,4 +1,4 @@
-# My personal learning during the event - for personal reference
+# Learning during the event - for future reference
 
 ## Day5
 
@@ -18,3 +18,8 @@ print(sample_string.translate("".maketrans("FLBR", "0011")))
 
  * use map(), reduce() with function like set(), list() etc
  * using * to access the elements in the set like *set()   
+
+
+## Day7
+
+* Using `defaultdict()` over dict{} will allow the handle te keyword missing error.
