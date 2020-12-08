@@ -6,13 +6,13 @@ def input_parser(input_file):
 
     outer_colour_dict = defaultdict(lambda: {})
     for line in input_list:
-        if 'no other bags' not in line: 
+        if 'no other bags' not in line:
             outer_colour, right = line.split(' bags contain')
             outer_colour = outer_colour.replace(" ", "")
             # we can do the same operation with filter by spliting with white space and filtering out bags, bag
 
             inner_colours = right.replace(" ", "").replace('bags', "").replace('bag', "").strip('.').split(',')
-            # inner_colours =  ['1brightwhite', '2mutedyellow'] for a input line of light red bags contain 1 bright white bag, 2 muted yellow bags.
+            # inner_colours =  ['1brightwhite', '2mutedyellow'] for a input line of "light red bags contain 1 bright white bag, 2 muted yellow bags."
 
             inner_colours_dict = { colour[1:]: int(colour[0])  for colour in inner_colours}
 
@@ -49,15 +49,14 @@ def find_number_of_inside_bags(outer_colour_dict, search_bag):
 def main():
     input_file = 'D:\Projects\AdventOfCode2020\day7\input.txt'
     outer_colour_dict = input_parser(input_file)
-    
+
     # puzzle 1
     search_bag="shiny gold"
     # find_number_of_outer_bags(outer_colour_dict, search_bag.replace(" ", ""))
 
     # puzzle 2
     print('number of inner_bags', find_number_of_inside_bags(outer_colour_dict, search_bag.replace(" ", "")))
-    
+
 
 if __name__ == "__main__":
     main()
-

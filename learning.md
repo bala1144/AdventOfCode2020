@@ -23,3 +23,27 @@ print(sample_string.translate("".maketrans("FLBR", "0011")))
 ## Day7
 
 * Using `defaultdict()` over dict{} will allow the handle te keyword missing error.
+
+## Day8
+
+* using `copy.deepcopy()` to copy next list or 2D list array [ [] , [] ]
+```
+>>> import copy
+>>> a = [[1,2],[3,4]]
+>>> a
+[[1, 2], [3, 4]]
+>>> b = a.copy()
+>>> b[0][0] = 100
+>>> b      
+[[100, 2], [3, 4]]
+>>> a
+[[100, 2], [3, 4]]
+>>> c = copy.deepcopy(b)
+>>> c [0][0] = 0
+>>> c
+[[0, 2], [3, 4]]
+>>> b
+[[100, 2], [3, 4]]
+>>> a
+[[100, 2], [3, 4]]
+```
