@@ -7,3 +7,5 @@
 * [Day 05](https://adventofcode.com/2020/day/5) - Seat finding
 * [Day 06](https://adventofcode.com/2020/day/6) - Custom Customs
 * [Day 07](https://adventofcode.com/2020/day/7) - Handy Haversacks
+* [Day 08](https://adventofcode.com/2020/day/8) - Handheld Halting
+* [Day 09](https://adventofcode.com/2020/day/9) - Encoding error
