@@ -46,3 +46,48 @@ print(sample_string.translate("".maketrans("FLBR", "0011")))
 >>> a
 [[100, 2], [3, 4]]
 ```
+
+# Day10
+
+c++ refreshing
+
+```
+#include <iostream>
+#include <string>
+
+int main()
+{
+    int *a ;
+    std::cout << "A print " <<  a << std::endl;
+    
+    a  = new int(2);
+    std::cout << "a new assignment " <<  a << std::endl;
+    std::cout << "a address " <<  &a << std::endl;
+    std::cout << "a address value " <<  *&a << std::endl;
+    std::cout << "a address value value " <<  **&a << std::endl;
+    
+    // array using pointers
+    
+    int *arr = (int *)calloc(10, 10 * sizeof(int));
+    std::cout << "Size of int " << sizeof(int) << std::endl; 
+    std::cout << "Size of arr " << sizeof(arr) << std::endl; 
+    std::cout << " print arr "<< arr << std::endl; 
+    std::cout << " arr val "<< *arr << std::endl;
+    std::cout << " Address of arr val "<< &arr << std::endl; 
+    std::cout << " val Address of arr val "<< *&arr << std::endl;
+    
+}
+
+output:
+A print 0x400c50
+a new assignment 0x225bc20
+a address 0x7ffd6e961d80
+a address value 0x225bc20
+a address value value 2
+Size of int 4
+Size of arr 8
+ print arr 0x225bc40
+ arr val 0
+ Address of arr val 0x7ffd6e961d88
+ val Address of arr val 0x225bc40
+```

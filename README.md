@@ -9,3 +9,5 @@
 * [Day 07](https://adventofcode.com/2020/day/7) - Handy Haversacks
 * [Day 08](https://adventofcode.com/2020/day/8) - Handheld Halting
 * [Day 09](https://adventofcode.com/2020/day/9) - Encoding error
+* [Day 10](https://adventofcode.com/2020/day/10) - Adapter array
+* [Day 11](https://adventofcode.com/2020/day/11) - Seating System

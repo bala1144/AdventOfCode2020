@@ -124,4 +124,4 @@ def puzzle_2_ref_fn():
 
 if __name__ == "__main__":
     # main()
-    copied_fn()
+    def puzzle_2_ref_fn()
