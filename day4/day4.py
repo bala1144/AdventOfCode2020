@@ -49,7 +49,7 @@ def check_hgt(data):
     if ( 'in' in hgt_data ):
         return 1 if ( 59 <= int(hgt_data.split('in')[0]) ) and ( int(hgt_data.split('in')[0]) <= 76 ) else 0
         
-check_hcl = lambda data : 1 if re.search("^(#[\da-f]{6})$", data['hcl']) else 0
+check_hcl = lambda data : 1 if re.("^(#[\da-f]{6})$", data['hcl']) else 0
 
 # exactly one of: amb blu brn gry grn hzl oth.
 check_ecl = lambda data : 1 if ( len(data['ecl']) == 3 ) and (data['ecl'] in [ 'amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']) else 0

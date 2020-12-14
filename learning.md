@@ -91,3 +91,30 @@ Size of arr 8
  Address of arr val 0x7ffd6e961d88
  val Address of arr val 0x225bc40
 ```
+
+### Day14
+
+* Regular expression in python : using regexes allows to match multiple set of patterns which is not possible with string manipulation methods provided, We can also specify portion of the regular expression to be repeated reguarly
+
+```
+sample input : 
+mask = XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
+mem[8] = 11
+mem[7] = 101
+mem[8] = 0
+-----------------
+
+for line in input_list: 
+    if 'mask' in line:
+        instruction_list.append(re.search("[X01]+", line).group())
+    elif 'mem' in line:
+        instruction_list.append(tuple(map(int,re.findall(r"\d+", line))))
+    else:
+        raise RuntimeError('Invalid instruction')
+
+-----------------
+
+* First regex will return XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X, it creates a class for X,0,1 with repetition.
+* Second regex will return all the digits in the line  : (8,11)
+        
+```
