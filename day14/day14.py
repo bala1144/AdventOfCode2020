@@ -55,7 +55,6 @@ def apply_mask_version2(val, mask):
     fn : copy the 1's from the mask to the input value and compute the resulting decimal val
 
     """
-    memeory_locations = []
     memory_diffs = []
     for bitPosition, x in enumerate(mask[::-1]):
         if x == '1':
@@ -78,7 +77,7 @@ def compute_memory_values(instruction_list):
             current_mask = instruction
         else:
             addrs, val = instruction
-            print(instruction, apply_mask(val, current_mask))
+            # print(instruction, apply_mask(val, current_mask))/
             memory[addrs] = apply_mask(val, current_mask)
 
     return memory
@@ -103,11 +102,11 @@ def main():
     input_file = 'D:\Projects\AdventOfCode2020\day14\input.txt'
     instruction_list = input_parser(input_file) 
 
-    puzzle 1
+    # puzzle 1
     memory = compute_memory_values(instruction_list)
     print('The sum of values in the dict = ', sum(memory.values()))
 
-        # puzzle 1
+    # puzzle 2
     memory = compute_memory_values_version2(instruction_list)
     print('The sum of values in the dict = ', sum(memory.values()))
 
