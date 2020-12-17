@@ -26,10 +26,9 @@ def sim_memory_game(start_numbers, Nth):
         else:
             next_num = 0
 
+        # once recent number is processed it is added to the history
         memory[curr_num] = (i-1)
         curr_num = next_num
-        # print(i,curr_num, next_num)
-
 
     print(next_num)        
 
