@@ -118,3 +118,19 @@ for line in input_list:
 * Second regex will return all the digits in the line  : (8,11)
         
 ```
+
+
+# day23
+
+* Acessing an array using a linked list faster than accesing via index
+
+example of circular linked list in python
+
+`
+a = [1,2,3,4]
+
+link = [None] *  len(a)
+for x,y in zip(a, a[1:]+ [a[0]])
+    links[x] = y
+
+`
