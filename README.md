@@ -17,3 +17,10 @@
 * [Day 15](https://adventofcode.com/2020/day/15) - Rambunctious Recitation
 * [Day 16](https://adventofcode.com/2020/day/16) - Ticket Translation
 * [Day 17](https://adventofcode.com/2020/day/17) - Conway Cubes
+* [Day 18](https://adventofcode.com/2020/day/18) - Operation Order
+* [Day 19](https://adventofcode.com/2020/day/19) - Monster Messages
+* [Day 20](https://adventofcode.com/2020/day/20) - Jurassic Jigsaw
+* [Day 21](https://adventofcode.com/2020/day/21) - Allergen Assessment
+* [Day 22](https://adventofcode.com/2020/day/22) - Crab Combat
+* [Day 23](https://adventofcode.com/2020/day/23) - Crab Cups
+* [Day 24](https://adventofcode.com/2020/day/24) - Lobby Layout

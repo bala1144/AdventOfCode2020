@@ -20,11 +20,9 @@ def findSum2N(input_list, N):
         else:
             end_ptr = end_ptr - 1
 
-
 def find_mNum_Sum2N(input_list, N):
 
     all_set = set()
-
     for num1, num2 in it.combinations(input_list, 2):
         if N - num1 - num2 in all_set:
             print(num1 * num2 * (N - num1 - num2))
